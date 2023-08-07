@@ -18,7 +18,7 @@ An app to track and edit employee details from the command line.
 
 ## Installation
 
-git clone
+git clone git@github.com:iggy-ziggy/employee-tracker.git
 
 ## Usage
 
