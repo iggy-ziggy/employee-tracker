@@ -8,11 +8,11 @@ const inquirer = require('inquirer');
 // view all employees
     // table with em id, names, job title, dep, salary, and manager -- CHECK
 // add dep
-    // enter dep name
+    // enter dep name -- CHECK
 // add role
-    // role name, salary, dep
+    // role name, salary, dep --CHECK
 // add employee
-    // first, last, role, manager
+    // first, last, role, manager -- CHECK
 // update employee role
     // select employee
     // update role

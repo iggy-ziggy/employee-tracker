@@ -38,7 +38,19 @@ db.query('SELECT roles.id AS "Role_ID", title AS "Title", salary AS "Salary", de
 //     console.log(results);
 // });
 
+db.query(`INSERT INTO departments (name) VALUES ('Books')`, function(err, results) {
+    console.log(results);
+});
 
+db.query(`INSERT INTO roles (title, salary, department_id) VALUES ('Bookseller', 40000, 1)`, function(err, results) {
+    console.log('Role added!');
+});
+
+db.query(`INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES ('Maynard', 'Keenan', 2, 5)`, function(err, results) {
+    console.log('Employee added!');
+});
+
+db.query(`UPDATE employees SET role_id = 3 WHERE employees.id = 3`)
 
 app.use((req, res) => {
     res.status(404).end();
