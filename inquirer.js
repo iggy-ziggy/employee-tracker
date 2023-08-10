@@ -2,11 +2,11 @@ const inquirer = require('inquirer');
 
 // what would you like to do?
 // view all departments
-    //return table with dep name and id
+    //return table with dep name and id -- CHECK
 //view all roles
-    // table with job title, role id, dep, salary
+    // table with job title, role id, dep, salary -- CHECK
 // view all employees
-    // table with em id, names, job title, dep, salary, and manager
+    // table with em id, names, job title, dep, salary, and manager -- CHECK
 // add dep
     // enter dep name
 // add role
