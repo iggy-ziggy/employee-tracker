@@ -1,21 +1,6 @@
 const inquirer = require('inquirer');
 
-// what would you like to do?
-// view all departments
-    //return table with dep name and id
-//view all roles
-    // table with job title, role id, dep, salary
-// view all employees
-    // table with em id, names, job title, dep, salary, and manager
-// add dep
-    // enter dep name
-// add role
-    // role name, salary, dep
-// add employee
-    // first, last, role, manager
-// update employee role
-    // select employee
-    // update role
+
 
 
 
