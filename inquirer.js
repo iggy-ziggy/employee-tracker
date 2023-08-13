@@ -70,24 +70,23 @@ const questions = [
 inquirer
   .prompt(questions)
   .then((answers) => {
-    // Use user feedback for... whatever!!
     // console.log(answers.options);
-    // console.log(answers);
+    console.log(answers);
     
-    switch() {
-      case :
-        console.log();
-        break;
-      case :
-        console.log();
-        break;
-      case :
-        console.log();
-        break;
-      case :
-        console.log();
-        break;
-    }
+    // switch() {
+    //   case :
+    //     console.log();
+    //     break;
+    //   case :
+    //     console.log();
+    //     break;
+    //   case :
+    //     console.log();
+    //     break;
+    //   case :
+    //     console.log();
+    //     break;
+    // }
   })
   .catch((error) => {
     if (error.isTtyError) {
