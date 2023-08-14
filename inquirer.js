@@ -32,11 +32,43 @@ const questions = [
     },
   },
   {
+    type: 'number',
+    message: 'Please enter a salary for this role',
+    name: 'role_salary',
+    when(answers) {
+      return answers.add_role != null;
+    }
+  },
+  {
     type: 'input',
-    message: 'Please enter an employee to add to the database',
-    name: 'add_emp',
+    message: 'Please enter a first name',
+    name: 'first_name',
     when(answers) {
       return answers.options == 'Add an employee';
+    },
+  },
+  {
+    type: 'input',
+    message: 'Please enter a last name',
+    name: 'last_name',
+    when(answers) {
+      return answers.first_name != null;
+    },
+  },
+  {
+    type: 'number',
+    message: 'Please enter a role id',
+    name: 'role_id',
+    when(answers) {
+      return answers.last_name != null;
+    },
+  },
+  {
+    type: 'number',
+    message: `Please enter this employee's manager (manager id)`,
+    name: 'emp_manager',
+    when(answers) {
+      return answers.role_id != null;
     },
   },
   {
@@ -48,19 +80,7 @@ const questions = [
     },
   },
 ];
-// what would you like to do?
-// view all departments
-    //return table with dep name and id -- CHECK
-//view all roles
-    // table with job title, role id, dep, salary -- CHECK
-// view all employees
-    // table with em id, names, job title, dep, salary, and manager -- CHECK
-// add dep
-    // enter dep name -- CHECK
-// add role
-    // role name, salary, dep --CHECK
-// add employee
-    // first, last, role, manager -- CHECK
+
 // update employee role
     // select employee
     // update role
@@ -90,8 +110,8 @@ inquirer
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+      
     } else {
-      // Something else went wrong
+      
     }
   });
