@@ -147,7 +147,7 @@ const questions = [
     },
     {
       type: 'number',
-      message: 'Please enter a departmet id for this role',
+      message: 'Please enter a department id for this role',
       name: 'role_id',
       validate: (answer) => {
         if (!Number.isInteger(answer)) {
